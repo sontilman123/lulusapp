@@ -21,7 +21,8 @@ function direct(mapel) {
 	if (localStorage.getItem("lulusapp_pilihan") == "soalpembahasan") {
 		window.location.href = 'halamansoaldanpembahasan.html?page=1';
 	} else if (localStorage.getItem("lulusapp_pilihan") == "latihan") {
-		window.location.href = 'home.html';
+		window.location.href = 'halamansoal.html';
+		localStorage.setItem("lulusapp_counter", "0");
 	} else {
 		window.location.href = 'home.html';
 	}
