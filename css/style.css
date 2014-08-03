@@ -186,6 +186,7 @@ header{
     top: 0px;
     width: 100%;
 	z-index:9;
+	display: block;
 }
 header, footer{
 	background:#FF0008;
@@ -276,7 +277,7 @@ article h2 a:hover{color:#ff3b1a;}
 	width:80%;
 	height:100%;
 	margin:auto;
-	margin-top:100px;
+	margin-top:10px;
 	padding:20px 20px 40px 20px;
 	border:3px solid #FF0008;
 	border-radius:5px;
@@ -327,10 +328,12 @@ article h2 a:hover{color:#ff3b1a;}
 }
 
 .button_estudo{
-	width:75%;
+	width:80%;
 	height:100%;
-	margin:auto;
-	margin-top:100px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:10px;
+	margin-bottom:10px;
 	padding:20px 20px 40px 20px;
 	background:#FFFFFF;
 }
@@ -339,7 +342,10 @@ article h2 a:hover{color:#ff3b1a;}
 	width:100%;
 	height:60px;
 	font-size: 18px;
-	margin:15px 15px 15px 15px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:10px;
+	margin-bottom:10px;
 	color:white;
 	text-decoration:none;
 	display:inline-block;
@@ -395,4 +401,8 @@ article h2 a:hover{color:#ff3b1a;}
 	font-size:14px;
 	margin-left:15px;
 	margin-top: 15px;
+}
+
+#greeting, #header_login, #header_register, #header_logout, #header_setting {
+	display: none;
 }
