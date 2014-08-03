@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Estudia</title>
+	
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	
+	<!-- Main CSS -->
+	<link rel="stylesheet" media="all" href="../css/style.css" type="text/css">
+	
+	<!--<script src="js/jquery.js" type="text/javascript"></script>-->
+	<script src="../js/jquery-2.1.0.min.js" type="text/javascript"></script>
+	
+	<script src="../js/pilihanmapel.js" type="text/javascript"></script>
+	<script>
+		//var UN = getElementsByName('UN');
+		//var UN_matematika  	= document.getElementById('UN_matematika');
+		
+		//UN.style.display = "none";
+		//UN_matematika.style.display = "none";
+		
+	
+	$(function(){
+		$("#header").load("header.html"); 
+	  });
+		
+		//alert(localStorage.getItem("lulusapp_pilihan"));
+		//alert(localStorage.getItem("lulusapp_tipe"));
+		//alert(localStorage.getItem("lulusapp_tahun"));
+	</script>	
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<div id="header"> </div>
+		</header>
+		
+		<div class="content">
+						
+			<div class="button_estudo" id="mapel_UN" name="UN">
+				<button type="button" id="UN_matematika" value="matematika" onclick="direct(this.value)">Matematika</button><br />
+				<button type="button" id="UN_bindonesia" value="bindonesia" onclick="direct(this.value)">Bahasa Indonesia</button><br />
+				<button type="button" id="UN_binggris" value="binggris" onclick="direct(this.value)">Bahasa Inggris</button><br />
+				<button type="button" id="UN_fisika" value="fisika" onclick="direct(this.value)">Fisika</button><br />
+				<button type="button" id="UN_kimia" value="kimia" onclick="direct(this.value)">Kimia</button><br />
+				<button type="button" id="UN_biologi" value="biologi" onclick="direct(this.value)">Biologi</button><br />
+			</div>
+			
+			<div class="button_estudo" id="mapel_SBMPTN" name="SBMPTN">
+				<button type="button" id="SBMPTN_matematikadasar" value="matematikadasar" onclick="direct(this.value)">Matematika Dasar</button><br />
+				<button type="button" id="SBMPTN_bindonesia" value="bindonesia" onclick="direct(this.value)">Bahasa Indonesia</button><br />
+				<button type="button" id="SBMPTN_binggris" value="binggris" onclick="direct(this.value)">Bahasa Inggris</button><br />
+				<button type="button" id="SBMPTN_matematikaipa" value="matematikaipa" onclick="direct(this.value)">Matematika IPA</button><br />
+				<button type="button" id="SBMPTN_fisika" value="fisika" onclick="direct(this.value)">Fisika</button><br />
+				<button type="button" id="SBMPTN_kimia" value="kimia" onclick="direct(this.value)">Kimia</button><br />
+				<button type="button" id="SBMPTN_biologi" value="biologi" onclick="direct(this.value)">Biologi</button><br />
+				<button type="button" id="SBMPTN_matematikaipa" value="sejarah" onclick="direct(this.value)">Sejarah</button><br />
+				<button type="button" id="SBMPTN_ekonomi" value="ekonomi" onclick="direct(this.value)">Ekonomi</button><br />
+				<button type="button" id="SBMPTN_sosiologi" value="sosiologi" onclick="direct(this.value)">Sosiologi</button><br />
+				<button type="button" id="SBMPTN_geografi" value="geografi" onclick="direct(this.value)">Geografi</button><br />
+			</div>
+			
+		</div>
+		
+		<footer>
+			
+		</footer>
+	</div>
+</html>

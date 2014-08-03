@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Estudia</title>
+	
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	
+	<!-- Main CSS -->
+	<link rel="stylesheet" media="all" href="../css/style.css" type="text/css">
+	
+	<!--<script src="js/jquery.js" type="text/javascript"></script>-->
+	<script src="../js/jquery-2.1.0.min.js" type="text/javascript"></script>
+	
+	<script src="../js/soaldanmateri.js" type="text/javascript"></script>
+	<script>
+	$(function(){
+		$("#header").load("header.html"); 
+	  });
+	</script>	
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<div id="header"> </div>
+		</header>
+		
+		<div class="content">
+			
+			<div class="questionset" id="questionset">
+				<div id="question"></div>
+					
+				<form class="answer" id="answer">
+					<input type="radio" name="answers" id="rad_a" value="A" checked><div class="answerset" id="pil_a">A. </div><br />
+					<input type="radio" name="answers" id="rad_b" value="B"><div class="answerset" id="pil_b">B. </div><br />
+					<input type="radio" name="answers" id="rad_c" value="C"><div class="answerset" id="pil_c">C. </div><br />
+					<input type="radio" name="answers" id="rad_d" value="D"><div class="answerset" id="pil_d">D. </div><br />
+					
+					<input type='submit' name='submit' value='Yakin'>
+				</form>
+				
+			</div>
+		</div>
+		
+		<footer>
+			
+		</footer>
+	</div>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	
+	<!-- Main CSS -->
+	<link rel="stylesheet" media="all" href="../css/style.css" type="text/css">
+	
+	<!--<script src="js/jquery.js" type="text/javascript"></script>-->
+	<script src="../js/jquery-2.1.0.min.js" type="text/javascript"></script>
+	
+	<script src="../js/header.js" type="text/javascript"></script>	
+	
+	<script>
+		var greeting  	= document.getElementById('greeting');
+		var login 		= document.getElementById('header_login');
+		var register 	= document.getElementById('header_register');
+		var setting 	= document.getElementById('header_setting');
+		var logout 		= document.getElementById('header_logout');
+
+		if (localStorage.getItem("lulusapp_user") == null) {
+			greeting.style.display 	= "none";
+			login.style.display 	= "inline";
+			register.style.display 	= "inline";
+			setting.style.display 	= "none";
+			logout.style.display 	= "none";
+		} else {
+			$('#greeting').append(localStorage.getItem("lulusapp_user"));
+			greeting.style.display 	= "inline";
+			login.style.display 	= "none";
+			register.style.display 	= "none";
+			setting.style.display 	= "inline";
+			logout.style.display 	= "inline";  
+		}
+	</script>
+	
+</head>
+
+<body>
+	<div class="logo"><a href="../index.html"><img src="../assets/logo.png" width="60px" height="60px"/></a></div>
+	<div class="options">
+		<ul>
+			<li>Menu</li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+	<nav class="vertical menu">
+		<ul>
+			<li><a id='greeting'>Welcome, </a></li>
+			<li id='header_login'><a href="login.html">Sign In</a></li>
+			<li id='header_register'><a href="register.html">Sign Up</a></li>
+			<li id='header_logout'><a href="logout.html">Sign Out</a></li>
+			<li id='header_setting'><a href="posting.html">Setting</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
