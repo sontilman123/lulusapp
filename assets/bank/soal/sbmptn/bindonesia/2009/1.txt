@@ -1,0 +1,1 @@
+{"soal":"Ini soal fisikasdgfs dgsdg A submit button is used to send form data to a server. The data is sent to the page specified in the form's action attribute. The file defined in the action attribute usually does something with the received input:","pil_a":"Pilihan A","pil_b":"Pilihan B","pil_c":"Pilihan C","pil_d":"Pilihan D"}

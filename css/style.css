@@ -361,7 +361,7 @@ article h2 a:hover{color:#ff3b1a;}
 	width:80%;
 	height:100%;
 	margin:auto;
-	margin-top:100px;
+	margin-top:15px;
 	padding:20px 20px 40px 20px;
 	border:3px solid #FF0008;
 	border-radius:5px;
@@ -369,7 +369,7 @@ article h2 a:hover{color:#ff3b1a;}
 }
 
 #question{
-	width:90%;
+	width:100%;
 	padding:10px 10px 10px 10px;
 	text-align:justify;
 	text-justify:inter-word;
@@ -401,6 +401,37 @@ article h2 a:hover{color:#ff3b1a;}
 	font-size:14px;
 	margin-left:15px;
 	margin-top: 15px;
+}
+
+.discussionset{
+	width:80%;
+	height:100%;
+	margin:auto;
+	margin-top:15px;
+	padding:20px 20px 40px 20px;
+	border:3px solid #FF0008;
+	border-radius:5px;
+	background:#FFFFFF;
+}
+
+.page_navigator{
+	width:80%;
+	height:100%;
+	margin:auto;
+	padding:20px 0px 40px 20px;
+	
+}
+
+.page_navigator button {
+	float:right;
+	color:white;
+	text-decoration:none;
+	vertical-align:top;
+	padding:3px 7px;
+	border:0px solid rgb(0, 0, 0);
+	border-radius:5px;
+	background:#FF0008;
+	display: inline-block;
 }
 
 #greeting, #header_login, #header_register, #header_logout, #header_setting {

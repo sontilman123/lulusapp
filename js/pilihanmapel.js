@@ -14,7 +14,15 @@ window.addEventListener('load',function() {
 });
 
 function direct(mapel) {
-	alert(mapel);
+	//alert(mapel);
 	//window.location.href = 'pilihanmapel.html';
 	localStorage.setItem("lulusapp_mapel", mapel);
+	
+	if (localStorage.getItem("lulusapp_pilihan") == "soalpembahasan") {
+		window.location.href = 'halamansoaldanpembahasan.html?page=1';
+	} else if (localStorage.getItem("lulusapp_pilihan") == "latihan") {
+		window.location.href = 'home.html';
+	} else {
+		window.location.href = 'home.html';
+	}
 }
